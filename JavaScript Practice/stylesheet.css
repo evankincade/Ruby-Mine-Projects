@@ -1,0 +1,16 @@
+#result {
+    font-size: 45px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.red-text {
+    color: red;
+    transition: .1s;
+    font-size: 75px;
+}
+
+.border-red {
+    border: 1px solid red;
+}

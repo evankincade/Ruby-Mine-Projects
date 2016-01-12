@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="practice.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <title>Javascript Practice</title>
+</head>
+<body>
+    <h1 id="main-heading">Hello!</h1>
+    <div class="form-div">
+        <form id="add_two_numbers">
+            <form>
+                First Number:<br>
+                <input type="text" name="first_number" id="first_number">
+                <br>
+                Second Number:<br>
+                <input type="text" name="second_number" id="second_number">
+                <button type="button" onclick="addTwoNumbers()">Click Me!</button>
+            </form>
+        </form>
+    </div>
+
+    <div id="result">
+        <p class="para">Your Result Will Appear Here!</p>
+    </div>
+
+    <div>
+        <p class="para">Great work!</p>
+    </div>
+
+    <script>
+        /**
+        var mainHeading = document.querySelector("h1");
+
+        var addRedClass = function() {
+            mainHeading.className = mainHeading.className + " red-text";
+        };
+
+        mainHeading.addEventListener("mouseover", addRedClass)
+        **/
+
+        /* Add the "red-text" class to all paragraphs with class of ".para". */
+        var mainHeading = $("#main-heading");
+
+
+        var clickAddClasses = {
+
+            $("h1").click(function () {
+                $("h1").addClass("border-red red-text");
+            });
+
+            $(".para").click(function () {
+                $(this).addClass("red-text").css("border", "1px solid black");
+            });
+        };
+
+
+    </script>
+</body>
+</html>
